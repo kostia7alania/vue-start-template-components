@@ -1,8 +1,8 @@
 {
-  "name": "uploader",
-  "description": "Simple uploader",
+  "name": "cryptopro-pdf-sign-in-browser-with-vuejs",
+  "description": "КриптоПро ЭЦП Browser plug-in предназначен для создания и проверки электронной подписи (ЭП) на веб-страницах с использованием СКЗИ \"КриптоПро CSP\"",
   "version": "1.0.0",
-  "author": "",
+  "author": "Kostia7ALANia <osetia-alania@mail.ru>",
   "license": "MIT",
   "private": true,
   "scripts": {
@@ -10,9 +10,7 @@
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "axios": "^0.18.0",
-    "vue": "^2.5.11",
-    "vue-axios": "^2.1.1"
+    "vue": "^2.5.11"
   },
   "browserslist": [
     "> 1%",
@@ -27,6 +25,8 @@
     "cross-env": "^5.0.5",
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",

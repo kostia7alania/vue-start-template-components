@@ -1,13 +1,18 @@
 <template>
-  <div>
-    <p>{{msg}}</p>
+  <div class="scobki">
+    <h2>Input.vue {{doc_id}}</h2>
+    <p><b>Input.vue: msg (prop)=></b> {{msg}}</p>
+
     <input type="text" :value="msg" @input="changeMessage">
-    <p>{{message}}</p>
+    <input type="text" :value="msg" @input="changeMessage">
+    <input type="text" :value="msg" @input="changeMessage">
+
+    <p><b>Input.vue: message (internal variable) =></b> {{message}}</p>
   </div>
 </template>
 <script>
 export default {
-  props: ['msg'],
+  props: ['msg','doc_id'],
   data() {
     return {
       message: ''
@@ -21,3 +26,10 @@ export default {
   }
 }
 </script>
+
+
+
+<style scoped>
+  .scobki { border: black 3px dashed ; background: darkmagenta}
+
+</style>

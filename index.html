@@ -2,11 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>uploader</title>
+    <title>Fast creating of VUE COMPONENTS</title>
   </head>
   <body>
 
-    <div id="app"></div>
+    <div id="app1"></div>
+    <div id="app2"></div>
+    <div id="app3"></div>
+
+
     <script src="/dist/build.js"></script>
+
+    <script>
+      props1 = {  selector: '#app1',   doc_id: 1  };
+      props2 = {  selector: '#app2',   doc_id: 2  };
+      props3 = {  selector: '#app3',   doc_id: 3  };
+      goNewVue(props1);
+      goNewVue(props2);
+      goNewVue(props3);
+    </script>
+
   </body>
 </html>
