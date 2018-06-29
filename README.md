@@ -35,8 +35,8 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
    </script>
 ```
 
-
 # SIZE:
+
 ```bash
 //==>> WITH POLYFILLS:
 Version: webpack 3.12.0
@@ -45,6 +45,6 @@ Asset Size Chunks Chunk Names
 build.js 205 kB 0 [emitted] main
 build.js.map 1.7 MB 0 [emitted] main
 
-///=>> without polyfills:
+///=>> without polyfills: (WORK IN IE 11)!!
 build.js - 101 kB
 ```
