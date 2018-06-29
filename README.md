@@ -33,8 +33,14 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
      goNewVue(props2);
      goNewVue(props3);
    </script>
-
-
-
-build.js  - 101 kB - without polyfills
 ```
+
+//==>> WITH POLYFILLS:
+Version: webpack 3.12.0
+Time: 7605ms
+Asset Size Chunks Chunk Names
+build.js 205 kB 0 [emitted] main
+build.js.map 1.7 MB 0 [emitted] main
+
+///=>> without polyfills:
+build.js - 101 kB
