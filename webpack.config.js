@@ -2,12 +2,17 @@ var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
-  entry: './src/main.js',
+  entry: ['babel-polyfill', 'whatwg-fetch', './src/main.js'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      Promise: 'es6-promise'
+    })
+  ],
   module: {
     rules: [{
         test: /\.css$/,
@@ -56,8 +61,11 @@ module.exports = {
       },
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
-        exclude: /node_modules/
+        query: {
+          presets: ['env', 'stage-0', 'stage-3']
+        }
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
