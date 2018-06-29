@@ -35,6 +35,8 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
    </script>
 ```
 
+
+# SIZE:
 ```bash
 //==>> WITH POLYFILLS:
 Version: webpack 3.12.0
