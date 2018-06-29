@@ -35,6 +35,7 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
    </script>
 ```
 
+```bash
 //==>> WITH POLYFILLS:
 Version: webpack 3.12.0
 Time: 7605ms
@@ -44,3 +45,4 @@ build.js.map 1.7 MB 0 [emitted] main
 
 ///=>> without polyfills:
 build.js - 101 kB
+```
